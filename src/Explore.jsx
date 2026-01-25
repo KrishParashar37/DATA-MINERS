@@ -1,18 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Sidebar from './Sidebar';
+import Navbar from './Navbar';
 import './Explore.css';
 
 import logo from './assets/logo.png';
+import { heritages } from './data';
 
 const Explore = () => {
     const navigate = useNavigate();
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => (prev + 1) % heritages.length);
+        }, 4000); // Change every 4 seconds
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <div className="explore-layout">
-            <Sidebar />
+            <Navbar />
             <div className="explore-content">
-                <div className="hero-section">
+                {/* Background Slider */}
+                <div className="hero-background-slider">
+                    {heritages.map((item, index) => (
+                        <img
+                            key={item.id}
+                            src={item.image}
+                            alt={item.name}
+                            className={`hero-slide ${index === currentIndex ? 'active' : ''}`}
+                        />
+                    ))}
+                    {/* Dark Overlay for readability */}
+                    <div className="hero-readability-overlay"></div>
+                </div>
+
+                {/* Foreground Content */}
+                <div className="hero-foreground">
                     <div className="app-branding centered-branding">
                         <img src={logo} alt="Indiverse Heritage Logo" className="app-logo-img" />
                         <h1 className="app-name">Indiverse<br />Heritage</h1>
@@ -26,25 +50,14 @@ const Explore = () => {
                         </p>
                     </div>
 
-                    <div className="hero-video-container">
-                        <video
-                            className="hero-video"
-                            controls
-                            autoPlay
-                            muted
-                            loop
-                            poster="https://placehold.co/800x400?text=Heritage+Video+Preview"
-                        >
-                            <source src="/heritage-video.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+                    <div className="explore-action">
+                        <button className="explore-btn-large" onClick={() => navigate('/heritages')}>
+                            EXPLORE
+                        </button>
                     </div>
-                </div>
 
-                <div className="explore-action">
-                    <button className="explore-btn-large" onClick={() => navigate('/heritages')}>
-                        EXPLORE
-                    </button>
+                    {/* Optional: Caption at bottom */}
+                    <div className="slide-caption-corner">{heritages[currentIndex].name}</div>
                 </div>
             </div>
         </div>

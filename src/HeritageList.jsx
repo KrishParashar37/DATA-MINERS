@@ -6,7 +6,14 @@ import './HeritageList.css';
 const HeritageList = () => {
     return (
         <div className="heritage-page">
-            <h1 className="page-title">Explore Cultural Heritage Sites</h1>
+            <div className="page-header">
+                <span className="page-subtitle-small">FEATURED DESTINATIONS</span>
+                <h1 className="page-title">Explore UNESCO World Heritage</h1>
+                <p className="page-description">
+                    Journey through India's most treasured architectural marvels, preserved for generations to come.
+                </p>
+                <div className="header-divider"></div>
+            </div>
             <div className="heritage-grid">
                 {heritages.map((item) => (
                     <HeritageCard key={item.id} item={item} />

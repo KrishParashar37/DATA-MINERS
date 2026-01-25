@@ -1,7 +1,7 @@
 .booking-page {
-    padding-top: 80px;
+    padding-top: 40px;
     min-height: 100vh;
-    background: #0f0f0f;
+    background: var(--secondary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,18 +9,20 @@
 }
 
 .booking-card {
-    background: #1a1a1a;
+    background: rgba(31, 46, 46, 0.9);
     width: 100%;
-    max-width: 500px;
-    padding: 2.5rem;
-    border-radius: 12px;
-    border: 1px solid #333;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    padding: 3rem;
+    border-radius: 4px;
+    /* Architectural corners */
+    border: 1px solid var(--primary);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
 }
 
 .booking-title {
-    font-size: 2rem;
-    color: var(--primary);
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--cream);
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -39,16 +41,19 @@
 
 .form-label {
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: var(--cream);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .form-input {
-    padding: 0.8rem;
-    border-radius: 6px;
-    border: 1px solid #333;
-    background: #252525;
-    color: var(--text-light);
+    padding: 1rem;
+    border-radius: 2px;
+    border: 1px solid #444;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
     font-size: 1rem;
+    font-family: var(--font-main);
     outline: none;
     transition: border-color 0.3s;
 }
@@ -61,17 +66,20 @@
     margin-top: 1rem;
     padding: 1rem;
     background: var(--primary);
-    color: #000;
+    color: var(--secondary);
     font-weight: 700;
     font-size: 1.1rem;
     border: none;
-    border-radius: 6px;
+    border-radius: 2px;
     cursor: pointer;
-    transition: filter 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s;
 }
 
 .btn-submit:hover {
-    filter: brightness(1.1);
+    background: var(--cream);
+    transform: translateY(-2px);
 }
 
 .success-message {
@@ -83,6 +91,66 @@
     font-size: 4rem;
     margin-bottom: 1rem;
     color: #4caf50;
+}
+
+.receipt-container {
+    background: #fff;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 4px;
+    /* Paper-like */
+    margin: 1.5rem 0;
+    font-family: 'Courier New', Courier, monospace;
+    /* Receipt font */
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Jagged edge effect (optional simple version) */
+.receipt-container::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: radial-gradient(circle, transparent 50%, #fff 55%);
+    background-size: 20px 20px;
+}
+
+.receipt-header {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px dashed #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.receipt-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.receipt-divider {
+    border-bottom: 1px dashed #ccc;
+    margin: 0.5rem 0;
+}
+
+.receipt-row.total {
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-top: 0.5rem;
+}
+
+.receipt-footer {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: #666;
 }
 
 .success-text {
