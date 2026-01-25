@@ -4,6 +4,8 @@ import Explore from './Explore';
 import HeritageList from './HeritageList';
 import HeritageDetail from './HeritageDetail';
 import TicketBooking from './TicketBooking';
+import Subscription from './Subscription';
+import Donate from './Donate';
 import './App.css';
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
           <Route path="/heritages" element={<HeritageList />} />
           <Route path="/heritage/:id" element={<HeritageDetail />} />
           <Route path="/book-ticket/:id" element={<TicketBooking />} />
+          <Route path="/subscription" element={<Subscription />} />
+          <Route path="/donate" element={<Donate />} />
           <Route path="/" element={<Navigate to="/login" replace />} />
         </Routes>
       </div>

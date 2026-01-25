@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
+import TextType from './TextType';
 import './Explore.css';
 
 import logo from './assets/logo.png';
@@ -16,6 +17,13 @@ const Explore = () => {
         }, 4000); // Change every 4 seconds
         return () => clearInterval(interval);
     }, []);
+
+    const descriptionTexts = [
+        "Preserving the echo of the past for the future.",
+        "Immerse yourself in a digital exploration of the world's greatest monuments.",
+        "Experience history like never before, from the comfort of your screen.",
+        "Discover India's rich cultural heritage through immersive virtual tours."
+    ];
 
     return (
         <div className="explore-layout">
@@ -43,11 +51,17 @@ const Explore = () => {
                     </div>
 
                     <div className="story-text">
-                        <p>
-                            Preserving the echo of the past for the future.
-                            Immerse yourself in a digital exploration of the world's greatest monuments
-                            and traditions. Experience history like never before, from the comfort of your screen.
-                        </p>
+                        <TextType
+                            text={descriptionTexts}
+                            typingSpeed={40}
+                            pauseDuration={2500}
+                            deletingSpeed={25}
+                            showCursor={true}
+                            cursorCharacter="_"
+                            cursorBlinkDuration={0.5}
+                            loop={true}
+                            className="typing-description"
+                        />
                     </div>
 
                     <div className="explore-action">
@@ -65,3 +79,4 @@ const Explore = () => {
 };
 
 export default Explore;
+
