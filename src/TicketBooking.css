@@ -1,0 +1,107 @@
+.booking-page {
+    padding-top: 80px;
+    min-height: 100vh;
+    background: #0f0f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-light);
+}
+
+.booking-card {
+    background: #1a1a1a;
+    width: 100%;
+    max-width: 500px;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.booking-title {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.form-input {
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #252525;
+    color: var(--text-light);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: var(--primary);
+}
+
+.btn-submit {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--primary);
+    color: #000;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.btn-submit:hover {
+    filter: brightness(1.1);
+}
+
+.success-message {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.success-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #4caf50;
+}
+
+.success-text {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.btn-home {
+    background: transparent;
+    border: 1px solid var(--text-muted);
+    color: var(--text-muted);
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-home:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}

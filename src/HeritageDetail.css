@@ -1,0 +1,172 @@
+.detail-page {
+    padding-top: 80px;
+    /* Space for a potential fixed header if we had one, or just spacing */
+    min-height: 100vh;
+    background: #000;
+    color: var(--text-light);
+}
+
+.carousel-container {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.carousel-video-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--text-muted);
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+    z-index: 10;
+}
+
+.control-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.control-dot.active {
+    background: var(--primary);
+}
+
+.detail-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.detail-title {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.detail-meta {
+    display: flex;
+    gap: 2rem;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+}
+
+.detail-desc {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    color: #ddd;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.btn-action {
+    flex: 1;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.btn-premium {
+    background: #333;
+    color: #ffd700;
+    /* Gold */
+    border: 1px solid #ffd700;
+}
+
+.btn-book {
+    background: var(--primary);
+    color: #000;
+}
+
+.btn-action:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+/* Modal for Premium Lock */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.premium-modal {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #ffd700;
+    text-align: center;
+    max-width: 400px;
+}
+
+.modal-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.modal-close {
+    margin-top: 1.5rem;
+    background: transparent;
+    border: 1px solid #555;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
