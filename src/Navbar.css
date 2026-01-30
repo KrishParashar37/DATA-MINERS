@@ -59,9 +59,34 @@
     color: var(--text-main);
 }
 
+/* Compact identity shown when user is signed in (top-right) */
+.nav-identity {
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: rgba(255,255,255,0.04);
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.nav-identity .identity-text {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #f6f6f6;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
 @media (max-width: 768px) {
     .navbar {
         padding: 1rem;
+    }
+
+    /* Hide identity on small screens to avoid overflow; user can open profile in future */
+    .nav-identity {
+        display: none;
     }
 
     .navbar-menu {

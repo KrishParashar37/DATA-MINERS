@@ -20,6 +20,7 @@ const TextType = ({
     onSentenceComplete,
     startOnVisible = false,
     reverseMode = false,
+    noReverse = false, // When true, skips deletion animation and clears text instantly
     ...props
 }) => {
     const [displayedText, setDisplayedText] = useState('');
@@ -114,7 +115,17 @@ const TextType = ({
                 } else if (textArray.length >= 1) {
                     if (!loop && currentTextIndex === textArray.length - 1) return;
                     timeout = setTimeout(() => {
-                        setIsDeleting(true);
+                        if (noReverse) {
+                            // Clear text instantly and move to next sentence
+                            if (onSentenceComplete) {
+                                onSentenceComplete(textArray[currentTextIndex], currentTextIndex);
+                            }
+                            setDisplayedText('');
+                            setCurrentCharIndex(0);
+                            setCurrentTextIndex(prev => (prev + 1) % textArray.length);
+                        } else {
+                            setIsDeleting(true);
+                        }
                     }, pauseDuration);
                 }
             }
@@ -142,7 +153,8 @@ const TextType = ({
         isVisible,
         reverseMode,
         variableSpeed,
-        onSentenceComplete
+        onSentenceComplete,
+        noReverse
     ]);
 
     const shouldHideCursor =

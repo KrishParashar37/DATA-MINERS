@@ -3,12 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import TextType from './TextType';
 import './Explore.css';
+import { useAuth } from './AuthProvider';
 
 import logo from './assets/logo.png';
 import { heritages } from './data';
 
 const Explore = () => {
     const navigate = useNavigate();
+    const { user } = useAuth();
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -45,9 +47,10 @@ const Explore = () => {
 
                 {/* Foreground Content */}
                 <div className="hero-foreground">
+
                     <div className="app-branding centered-branding">
                         <img src={logo} alt="Indiverse Heritage Logo" className="app-logo-img" />
-                        <h1 className="app-name">Indiverse<br />Heritage</h1>
+                        <h1 className="app-name">Indiverse Heritage</h1>
                     </div>
 
                     <div className="story-text">
@@ -60,6 +63,7 @@ const Explore = () => {
                             cursorCharacter="_"
                             cursorBlinkDuration={0.5}
                             loop={true}
+                            noReverse={true}
                             className="typing-description"
                         />
                     </div>
@@ -71,7 +75,7 @@ const Explore = () => {
                     </div>
 
                     {/* Optional: Caption at bottom */}
-                    <div className="slide-caption-corner">{heritages[currentIndex].name}</div>
+                    {/* <div className="slide-caption-corner">{heritages[currentIndex].name}</div> */}
                 </div>
             </div>
         </div>

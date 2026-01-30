@@ -24,12 +24,22 @@
   padding: 0;
 }
 
+/* Ensure the app root and document fill the viewport to avoid white gaps when
+   full-viewport sections (like Explore) use 100vh/scale transforms. This
+   prevents the page background from peeking during sub-pixel/transform motion. */
+html, body, #root {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
   font-family: var(--font-main);
   background-color: var(--bg-main);
   color: var(--text-main);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  /* Prevent browser overscroll from revealing the page background */
+  overscroll-behavior-y: none;
 }
 
 a {
