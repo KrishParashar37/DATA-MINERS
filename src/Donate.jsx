@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './Donate.css';
+import tajMahal from './assets/images/tajmahal1.jpeg';
+import hampi from './assets/images/Humpi.jpg.jpeg';
+import ajantaCaves from './assets/images/AjantaCaves1.jpeg';
 
 const Donate = () => {
     const [selectedAmount, setSelectedAmount] = useState(null);
@@ -28,7 +31,7 @@ const Donate = () => {
             raised: '₹12,45,000',
             goal: '₹25,00,000',
             progress: 50,
-            image: '🕌'
+            image: tajMahal
         },
         {
             name: 'Hampi Temple Conservation',
@@ -37,7 +40,7 @@ const Donate = () => {
             raised: '₹8,20,000',
             goal: '₹15,00,000',
             progress: 55,
-            image: '🛕'
+            image: hampi
         },
         {
             name: 'Ajanta Caves Documentation',
@@ -46,7 +49,7 @@ const Donate = () => {
             raised: '₹18,90,000',
             goal: '₹20,00,000',
             progress: 95,
-            image: '⛰️'
+            image: ajantaCaves
         }
     ];
 
@@ -194,7 +197,9 @@ irreplaceable cultural heritage!
                     <div className="projects-grid">
                         {heritageProjects.map((project, index) => (
                             <div key={index} className="project-card">
-                                <div className="project-icon">{project.image}</div>
+                                <div className="project-image-container">
+                                    <img src={project.image} alt={project.name} className="project-image" />
+                                </div>
                                 <div className="project-content">
                                     <div className="project-header">
                                         <h3 className="project-name">{project.name}</h3>

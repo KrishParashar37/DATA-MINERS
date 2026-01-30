@@ -202,6 +202,29 @@
     transform: translateY(-2px);
 }
 
+.explore-btn-planner {
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-family: var(--font-main);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    border: 2px solid #d4a500;
+    color: #2c2416;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    font-weight: 700;
+    margin-left: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.explore-btn-planner:hover {
+    background: linear-gradient(135deg, #ffed4e 0%, #ffd700 100%);
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+    transform: translateY(-2px);
+}
+
 .slide-caption-corner {
     position: absolute;
     bottom: 20px;

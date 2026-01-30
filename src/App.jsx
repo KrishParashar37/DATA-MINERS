@@ -7,6 +7,9 @@ import HeritageDetail from './HeritageDetail';
 import TicketBooking from './TicketBooking';
 import Subscription from './Subscription';
 import Donate from './Donate';
+import UNESCOSearch from './UNESCOSearch';
+import UserProfile from './UserProfile';
+import VisitPlanner from './VisitPlanner';
 import './App.css';
 
 // Protected Route Component - redirects to login if not authenticated
@@ -64,6 +67,21 @@ function AppRoutes() {
         <Route path="/donate" element={
           <ProtectedRoute>
             <Donate />
+          </ProtectedRoute>
+        } />
+        <Route path="/unesco-search" element={
+          <ProtectedRoute>
+            <UNESCOSearch />
+          </ProtectedRoute>
+        } />
+        <Route path="/profile" element={
+          <ProtectedRoute>
+            <UserProfile />
+          </ProtectedRoute>
+        } />
+        <Route path="/visit-planner" element={
+          <ProtectedRoute>
+            <VisitPlanner />
           </ProtectedRoute>
         } />
         <Route path="/" element={<Login />} />

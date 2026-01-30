@@ -162,6 +162,29 @@
     overflow: hidden;
 }
 
+.btn-header-planner {
+    margin-top: 1.5rem;
+    padding: 12px 32px;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    border: 2px solid #d4a500;
+    color: #2c2416;
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.btn-header-planner:hover {
+    background: linear-gradient(135deg, #ffed4e 0%, #ffd700 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+}
+
 @media (max-width: 768px) {
     .heritage-grid {
         grid-template-columns: 1fr;

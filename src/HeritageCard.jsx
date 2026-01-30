@@ -14,12 +14,12 @@ const HeritageCard = ({ item }) => {
                     <span className="card-tag">{item.category}</span>
                 </div>
                 <div className="card-overlays-bottom">
-                    <span className="card-rating">★ 4.8</span>
-                    <span className="card-views">👁 1.2M</span>
+                    <span className="card-rating">Rating: 4.8</span>
+                    <span className="card-views">Views: 1.2M</span>
                 </div>
             </div>
             <div className="card-content">
-                <p className="card-location">📍 {item.location}</p>
+                <p className="card-location">{item.location}</p>
                 <h3 className="card-title">{item.name}</h3>
                 <p className="card-short-desc text-truncate">{item.description}</p>
             </div>

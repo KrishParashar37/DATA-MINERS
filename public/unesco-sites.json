@@ -1,0 +1,305 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "name_en": "Taj Mahal",
+      "states": "India",
+      "category": "Cultural",
+      "date_inscribed": "1972",
+      "criteria": "i, ii, iv, vi",
+      "short_description": "An immense mausoleum of white marble built in Agra by the Mughal emperor Shah Jahan as a memorial to his favourite wife.",
+      "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 2,
+      "name_en": "Great Wall of China",
+      "states": "China",
+      "category": "Cultural",
+      "date_inscribed": "1987",
+      "criteria": "i, ii, iii, iv, vi",
+      "short_description": "Built over many centuries, the Great Wall is now more than 6,300 km long.",
+      "image": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 3,
+      "name_en": "Statue of Liberty",
+      "states": "United States",
+      "category": "Cultural",
+      "date_inscribed": "1984",
+      "criteria": "i, ii, vi",
+      "short_description": "A colossal neoclassical sculpture designed by French sculptor Frédéric Auguste Bartholdi.",
+      "image": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 4,
+      "name_en": "Angkor Wat",
+      "states": "Cambodia",
+      "category": "Cultural",
+      "date_inscribed": "1992",
+      "criteria": "i, ii, iii, iv",
+      "short_description": "The largest religious monument in the world, originally constructed as a Hindu temple.",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 5,
+      "name_en": "Machu Picchu",
+      "states": "Peru",
+      "category": "Cultural",
+      "date_inscribed": "1983",
+      "criteria": "i, iii, vii",
+      "short_description": "Situated on a mountain ridge above the Sacred Valley, Machu Picchu is an outstanding representation of Inca architecture.",
+      "image": "https://images.unsplash.com/photo-1587595431973-160e0d94add1?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 6,
+      "name_en": "Colosseum",
+      "states": "Italy",
+      "category": "Cultural",
+      "date_inscribed": "1980",
+      "criteria": "i, ii, iii, iv, vi",
+      "short_description": "An architectural and engineering marvel, the Colosseum is the largest remaining structure from the Roman Empire.",
+      "image": "https://images.unsplash.com/photo-1552832860-cfb67165eaf0?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 7,
+      "name_en": "Christ the Redeemer",
+      "states": "Brazil",
+      "category": "Cultural",
+      "date_inscribed": "2007",
+      "criteria": "i, ii, iv, vi",
+      "short_description": "An iconic statue of Jesus Christ with arms outstretched atop Corcovado mountain in Rio de Janeiro.",
+      "image": "https://images.unsplash.com/photo-1483729558449-99daa2827c90?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 8,
+      "name_en": "Pyramids of Giza",
+      "states": "Egypt",
+      "category": "Cultural",
+      "date_inscribed": "1979",
+      "criteria": "i, iii, iv",
+      "short_description": "Built as elaborate tombs for pharaohs, the pyramids are among the most iconic structures of ancient Egypt.",
+      "image": "https://images.unsplash.com/photo-1570561394914-e3c6e3a4a308?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 9,
+      "name_en": "Stonehenge",
+      "states": "United Kingdom",
+      "category": "Cultural",
+      "date_inscribed": "1986",
+      "criteria": "i, ii, iii",
+      "short_description": "A mysterious prehistoric monument consisting of standing stones arranged in circles on Salisbury Plain.",
+      "image": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 10,
+      "name_en": "Versailles Palace",
+      "states": "France",
+      "category": "Cultural",
+      "date_inscribed": "1979",
+      "criteria": "i, ii, vi",
+      "short_description": "The opulent royal residence of Louis XIV with magnificent gardens and Hall of Mirrors.",
+      "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 11,
+      "name_en": "Qutub Minar",
+      "states": "India",
+      "category": "Cultural",
+      "date_inscribed": "1993",
+      "criteria": "ii, iv, vi",
+      "short_description": "A towering minaret built as a victory monument, representing Indo-Islamic architecture at its finest.",
+      "image": "https://images.unsplash.com/photo-1554080221-cbf9a72e79e1?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 12,
+      "name_en": "Forbidden City",
+      "states": "China",
+      "category": "Cultural",
+      "date_inscribed": "1987",
+      "criteria": "i, ii, iii, iv, v, vi",
+      "short_description": "The largest palace complex in the world, serving as home to 24 Chinese emperors.",
+      "image": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 13,
+      "name_en": "Sagrada Familia",
+      "states": "Spain",
+      "category": "Cultural",
+      "date_inscribed": "1984",
+      "criteria": "i, ii, iv",
+      "short_description": "Gaudí's masterpiece basilica, an unfinished Roman Catholic church in Barcelona.",
+      "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 14,
+      "name_en": "Acropolis",
+      "states": "Greece",
+      "category": "Cultural",
+      "date_inscribed": "1987",
+      "criteria": "i, ii, iii, iv, vi",
+      "short_description": "Home to the Parthenon, the Acropolis is the symbol of ancient Greece and Western civilization.",
+      "image": "https://images.unsplash.com/photo-1570213847935-ecb299e11736?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 15,
+      "name_en": "Borobudur",
+      "states": "Indonesia",
+      "category": "Cultural",
+      "date_inscribed": "1991",
+      "criteria": "i, ii, v, vi",
+      "short_description": "The world's largest Buddhist monument, built in the 8th century with thousands of Buddha statues.",
+      "image": "https://images.unsplash.com/photo-1537136727326-c2c79b60f1d0?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 16,
+      "name_en": "Mont-Saint-Michel",
+      "states": "France",
+      "category": "Cultural",
+      "date_inscribed": "1979",
+      "criteria": "i, iii, vi",
+      "short_description": "A breathtaking island commune crowned with a Gothic abbey, surrounded by medieval ramparts.",
+      "image": "https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 17,
+      "name_en": "Alhambra",
+      "states": "Spain",
+      "category": "Cultural",
+      "date_inscribed": "1984",
+      "criteria": "i, iii, iv",
+      "short_description": "A palace and fortress complex of the Nasrid dynasty, showcasing Islamic architecture.",
+      "image": "https://images.unsplash.com/photo-1548037328-c9fa89d128fa?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 18,
+      "name_en": "Kremlin",
+      "states": "Russia",
+      "category": "Cultural",
+      "date_inscribed": "1990",
+      "criteria": "i, ii, iv, v, vi",
+      "short_description": "Historic fortified center of Moscow with iconic red walls and cathedrals.",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 19,
+      "name_en": "Yellowstone National Park",
+      "states": "United States",
+      "category": "Natural",
+      "date_inscribed": "1978",
+      "criteria": "vii, viii, ix, x",
+      "short_description": "The world's first national park, famous for geysers, hot springs, and wildlife.",
+      "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 20,
+      "name_en": "Serengeti National Park",
+      "states": "Tanzania",
+      "category": "Natural",
+      "date_inscribed": "1981",
+      "criteria": "vii, viii, ix, x",
+      "short_description": "Home to the famous wildebeest migration and diverse African wildlife.",
+      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 21,
+      "name_en": "Amazon Rainforest",
+      "states": "Brazil",
+      "category": "Natural",
+      "date_inscribed": "2000",
+      "criteria": "vii, viii, ix, x",
+      "short_description": "The world's largest rainforest, containing 10% of all species on Earth.",
+      "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 22,
+      "name_en": "Galápagos Islands",
+      "states": "Ecuador",
+      "category": "Natural",
+      "date_inscribed": "1978",
+      "criteria": "vii, viii, ix, x",
+      "short_description": "An archipelago famous for its unique wildlife and evolution of species.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 23,
+      "name_en": "Grand Canyon",
+      "states": "United States",
+      "category": "Natural",
+      "date_inscribed": "1979",
+      "criteria": "vii, viii, ix, x",
+      "short_description": "A massive canyon carved by the Colorado River, revealing geological history.",
+      "image": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 24,
+      "name_en": "Niagara Falls",
+      "states": "Canada",
+      "category": "Natural",
+      "date_inscribed": "1992",
+      "criteria": "vii, viii",
+      "short_description": "One of the most powerful waterfalls in the world, straddling the Canada-US border.",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 25,
+      "name_en": "Victoria Falls",
+      "states": "Zimbabwe",
+      "category": "Natural",
+      "date_inscribed": "1989",
+      "criteria": "vii, viii, ix, x",
+      "short_description": "One of the world's largest and most spectacular waterfalls.",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 26,
+      "name_en": "Mount Kilimanjaro",
+      "states": "Tanzania",
+      "category": "Natural",
+      "date_inscribed": "1987",
+      "criteria": "vii, viii, ix, x",
+      "short_description": "Africa's highest peak with distinctive ecosystems.",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 27,
+      "name_en": "Great Barrier Reef",
+      "states": "Australia",
+      "category": "Natural",
+      "date_inscribed": "1981",
+      "criteria": "vii, viii, ix, x",
+      "short_description": "The world's largest coral reef system with incredible marine biodiversity.",
+      "image": "https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 28,
+      "name_en": "Banff National Park",
+      "states": "Canada",
+      "category": "Natural",
+      "date_inscribed": "1985",
+      "criteria": "vii, viii, ix, x",
+      "short_description": "Canada's first national park featuring glaciers, lakes, and mountains.",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 29,
+      "name_en": "Khajuraho Temples",
+      "states": "India",
+      "category": "Cultural",
+      "date_inscribed": "1986",
+      "criteria": "i, ii, iii, iv",
+      "short_description": "A group of Hindu and Jain temples built between 950-1050 CE with intricate carvings.",
+      "image": "https://images.unsplash.com/photo-1518995940870-900c4f68a5de?w=500&h=400&fit=crop"
+    },
+    {
+      "id": 30,
+      "name_en": "Ajanta Caves",
+      "states": "India",
+      "category": "Cultural",
+      "date_inscribed": "1983",
+      "criteria": "i, ii, iii, iv, vi",
+      "short_description": "Ancient Buddhist cave temples carved into rock faces with magnificent murals.",
+      "image": "https://images.unsplash.com/photo-1516361974602-5f0d6b9cd90f?w=500&h=400&fit=crop"
+    }
+  ]
+}
+
